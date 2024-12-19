@@ -15,7 +15,20 @@ git push -u origin main
 #깃 풀
 git pull
 
+#주피터(.ipynb) 마크다운(.md)로 전환하는 방법
+
 #참고사이트
 -북마크
   - https://jeongxihoon.github.io/categories/#machine-learning
   - https://jeongxihoon.github.io/
+
+train = pd.read_csv("https://raw.githubusercontent.com/wikibook/machine-learning/2.0/data/csv/basketball_train.csv")
+test = pd.read_csv("https://raw.githubusercontent.com/wikibook/machine-learning/2.0/data/csv/basketball_test.csv")
+
+# pickle.load -> pd.read_pickle  대체 할것 
+with open('/content/drive/MyDrive/Colab Notebooks/231220_인공지능모델링을위한머신러닝(kea)/data/pkl/basketball_train.pkl', 'rb') as train_data:
+    train = pd.read_pickle(train_data)
+
+with open('/content/drive/MyDrive/Colab Notebooks/231220_인공지능모델링을위한머신러닝(kea)/data/pkl/basketball_test.pkl', 'rb') as test_data:
+    test = pd.read_pickle(test_data)
+
