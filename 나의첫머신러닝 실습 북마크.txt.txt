@@ -1,4 +1,10 @@
 
+git add -all
+git commit -m "add readme txt"
+git push -u orgin main
+
+git pull
+
 1) 참고
 	https://jeongxihoon.github.io/categories/#machine-learning
 	https://jeongxihoon.github.io/
